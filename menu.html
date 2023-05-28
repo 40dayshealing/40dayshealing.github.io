@@ -356,7 +356,9 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="thumbnail">
-                                <img src="images/아메리카노.jpg" alt="Lights" style="width:100%">
+                                <div onmouseover="mouseover1()" onmouseleave="mouseleave1()">
+                                    <img src="images/아메리카노.jpg" alt="아메리카노" style="width:100%" id="coffee1">
+                                </div>
                                 <div class="caption">
                                     아메리카노
                                     <p>HOT 3,000원 / ICE 3,500원</p>
@@ -365,7 +367,9 @@
                         </div>
                         <div class="col-md-4">
                             <div class="thumbnail">
-                                <img src="images/카페라떼.jpg" alt="Lights" style="width:100%">
+                                <div onmouseover="mouseover2()" onmouseleave="mouseleave2()">
+                                    <img src="images/카페라떼.jpg" alt="카페라떼" style="width:100%" id="coffee2">
+                                </div>
                                 <div class="caption">
                                     카페라떼
                                     <p>HOT 3,500원 / ICE 4,000원</p>
@@ -890,6 +894,25 @@
             </div>
         </div>
     </div>
+    <script>
+        let best1 = document.getElementById('coffee1');
+        function mouseover1() {
+            best1.setAttribute("src", "images/아메리카노_아이스.jpg");
+        }
+
+        function mouseleave1() {
+            best1.setAttribute("src", "images/아메리카노.jpg");
+        }   
+
+        let best2 = document.getElementById('coffee2');
+        function mouseover2() {
+            best2.setAttribute("src", "images/카페라떼_아이스.jpg");
+        }
+
+        function mouseleave2() {
+            best2.setAttribute("src", "images/카페라떼.jpg");
+        }    
+    </script>
 </body>
 
 </html>
