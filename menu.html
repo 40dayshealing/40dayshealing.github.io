@@ -357,7 +357,7 @@
                         <div class="col-md-4">
                             <div class="thumbnail">
                                 <div onmouseover="mouseover1()" onmouseleave="mouseleave1()">
-                                    <img src="images/아메리카노.jpg" alt="아메리카노" style="width:100%" id="coffee1">
+                                    <img src="images/아메리카노_아이스.jpg" alt="아메리카노" style="width:100%" id="coffee1">
                                 </div>
                                 <div class="caption">
                                     아메리카노
@@ -378,7 +378,9 @@
                         </div>
                         <div class="col-md-4">
                             <div class="thumbnail">
-                                <img src="images/바닐라라떼.jpg" alt="Lights" style="width:100%">
+                                <div onmouseover="mouseover3()" onmouseleave="mouseleave3()">
+                                    <img src="images/바닐라라떼_아이스.jpg" alt="Lights" style="width:100%">
+                                </div>
                                 <div class="caption">
                                     바닐라라떼
                                     <p>HOT 4,000원 / ICE 4,500원</p>
@@ -389,7 +391,9 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="thumbnail">
-                                <img src="images/카페모카.jpg" alt="Lights" style="width:100%">
+                                <div onmouseover="mouseover4()" onmouseleave="mouseleave4()">
+                                    <img src="images/카페모카_아이스.jpg" alt="Lights" style="width:100%">
+                                </div>
                                 <div class="caption">
                                     카페모카
                                     <p>HOT 4,000원 / ICE 4,500원</p>
@@ -398,7 +402,9 @@
                         </div>
                         <div class="col-md-4">
                             <div class="thumbnail">
-                                <img src="images/민트카페모카.jpg" alt="Lights" style="width:100%">
+                                <div onmouseover="mouseover5()" onmouseleave="mouseleave5()">
+                                    <img src="images/핫초코_아이스.jpg" alt="Lights" style="width:100%">
+                                </div>
                                 <div class="caption">
                                     민트카페모카
                                     <p>HOT 4,000원 / ICE 4,500원</p>
@@ -606,7 +612,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">                    
+                <div class="row">
                     <div class="col-md-4">
                         <div class="thumbnail">
                             <img src="images/쑥라떼.jpg" alt="Lights" style="width:100%">
@@ -739,7 +745,7 @@
                 </div>
             </div>
             <div class="tab-pane  fade" id="tabBody5" role="tabpanel" aria-labelledby="tab4" aria-hidden="true"
-                tabindex="0">                
+                tabindex="0">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="thumbnail">
@@ -879,8 +885,8 @@
         }
 
         function mouseleave1() {
-            best1.setAttribute("src", "images/아메리카노.jpg");
-        }   
+            best1.setAttribute("src", "images/아메리카노_핫.jpg");
+        }
 
         let best2 = document.getElementById('coffee2');
         function mouseover2() {
@@ -888,8 +894,35 @@
         }
 
         function mouseleave2() {
-            best2.setAttribute("src", "images/카페라떼.jpg");
+            best2.setAttribute("src", "images/카페라떼_핫.jpg");
         }    
+
+        let best3 = document.getElementById('coffee2');
+        function mouseover3() {
+            best3.setAttribute("src", "images/바날라카페라떼_아이스.jpg");
+        }
+
+        function mouseleave3() {
+            best3.setAttribute("src", "images/바닐라카페라떼_핫.jpg");
+        }  
+        
+        let best4 = document.getElementById('coffee2');
+        function mouseover4() {
+            best4.setAttribute("src", "images/카페모카_아이스.jpg");
+        }
+
+        function mouseleave4 {
+            best4.setAttribute("src", "images/카페모카_핫.jpg");
+        }  
+
+        let best5 = document.getElementById('coffee2');
+        function mouseover5() {
+            best4.setAttribute("src", "images/핫초코_아이스.jpg");
+        }
+
+        function mouseleave5 {
+            best4.setAttribute("src", "images/핫초코_핫.jpg");
+        }  
     </script>
 </body>
 
