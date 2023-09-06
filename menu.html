@@ -576,7 +576,8 @@
                                 <img src="images/생강차_핫.jpg" alt="Lights" style="width:100%" id="tea10">
                             </div>
                             <div class="caption">
-                                수제청 생강차
+                                생강차<br>
+                                수제청 
                                 <p>HOT 5,000원 / ICE 5,500원</p>
                             </div>
                         </div>
@@ -587,7 +588,7 @@
                                 <img src="images/레몬블랜딩티_핫.jpg" alt="Lights" style="width:100%" id="tea11">
                             </div>
                             <div class="caption">
-                                수제청 레몬 블랜딩티
+                                레몬 블랜딩티
                                 <p>녹차/홍차/허브티 중 선택<br>
                                     HOT 5,000원 / ICE 5,500원</p>
                             </div>
@@ -596,10 +597,10 @@
                     <div class="col-md-4">
                         <div class="thumbnail">
                             <div onmouseover="mouseover21()" onmouseleave="mouseleave21()">
-                                <img src="images/복숭아블랜딩티_캐모마일.jpg" alt="Lights" style="width:100%" id="tea12">
+                                <img src="images/복숭아블랜딩티_핫.jpg" alt="Lights" style="width:100%" id="tea12">
                             </div>
                             <div class="caption">
-                                수제청 복숭아 블랜딩티
+                                복숭아 블랜딩티
                                 <p>녹차/홍차/허브티 중 선택<br>
                                     HOT 5,000원 / ICE 5,500원</p>
                             </div>
@@ -676,6 +677,19 @@
                             </div>
                             <div class="caption">
                                 핫초코/핫민트초코
+                                <p>HOT 5,000원 / ICE 5,500원</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <div onmouseover="mouseover27_1()" onmouseleave="mouseleave27_1()">
+                                <img src="images/런던포그밀크티_아이스.jpg" alt="Lights" style="width:100%" id="latte7">
+                            </div>
+                            <div class="caption">
+                                런던포그 밀크티
                                 <p>HOT 5,000원 / ICE 5,500원</p>
                             </div>
                         </div>
@@ -971,150 +985,383 @@
             </div>
         </div>
     </div>
-    <script>
+    <audio id="audio" src="sound/새소리.mp3"></audio>
+    <script>            
+        let audio = document.getElementById('audio');                
         let best1 = document.getElementById('coffee1');
         function mouseover1() {
             best1.setAttribute("src", "images/아메리카노_핫.jpg");
+            audio.play();
         }
 
         function mouseleave1() {
             best1.setAttribute("src", "images/아메리카노_아이스.jpg");
+            audio.pause();
         }
 
         let best2 = document.getElementById('coffee2');
         function mouseover2() {
             best2.setAttribute("src", "images/카페라떼_핫.jpg");
+            audio.play();
         }
 
         function mouseleave2() {
             best2.setAttribute("src", "images/카페라떼_아이스.jpg");
+            audio.pause();
         }
 
         let best3 = document.getElementById('coffee3');
         function mouseover3() {
             best3.setAttribute("src", "images/바닐라라떼_핫.jpg");
+            audio.play();
         }
 
         function mouseleave3() {
             best3.setAttribute("src", "images/바닐라라떼_아이스.jpg");
+            audio.pause();
         }
 
         let best4 = document.getElementById('coffee4');
         function mouseover4() {
             best4.setAttribute("src", "images/카페모카_핫.jpg");
+            audio.play();
         }
 
         function mouseleave4() {
             best4.setAttribute("src", "images/카페모카_아이스.jpg");
+            audio.pause();
         }
 
         let best5 = document.getElementById('coffee5');
         function mouseover5() {
             best5.setAttribute("src", "images/캬라멜마끼아또_핫.jpg");
+            audio.play();
         }
 
         function mouseleave5() {
             best5.setAttribute("src", "images/캬라멜마끼아또_아이스.jpg");
+            audio.pause();
         }
 
         let best6 = document.getElementById('coffee6');
         function mouseover6() {
             best6.setAttribute("src", "images/아몬드카페라떼_핫.jpg");
+            audio.play();
         }
 
         function mouseleave6() {
             best6.setAttribute("src", "images/아몬드카페라떼_아이스.jpg");
+            audio.pause();
         }
 
         let best7 = document.getElementById('coffee7');
         function mouseover7() {
             best7.setAttribute("src", "images/아인슈페너.jpg");
+            audio.play();
         }
 
         function mouseleave7() {
             best7.setAttribute("src", "images/아인슈페너_아이스.jpg");
+            audio.pause();
+        }
+
+        let best8 = document.getElementById('coffee8');
+        function mouseover8() {
+            audio.play();
+        }
+
+        function mouseleave8() {
+            audio.pause();
         }
 
         let best9 = document.getElementById('coffee9');
         function mouseover9() {
             best9.setAttribute("src", "images/핸드드립.jpg");
+            audio.play();
         }
 
         function mouseleave9() {
             best9.setAttribute("src", "images/핸드드립_핫.jpg");
+            audio.pause();
         }
 
         let best10 = document.getElementById('tea1');
         function mouseover10() {
             best10.setAttribute("src", "images/녹차_핫.jpg");
+            audio.play();
         }
 
         function mouseleave10() {
             best10.setAttribute("src", "images/녹차_아이스.jpg");
+            audio.pause();
         }
 
         let best11 = document.getElementById('tea2');
         function mouseover11() {
             best11.setAttribute("src", "images/홍차_핫.jpg");
+            audio.play();
         }
 
         function mouseleave11() {
             best11.setAttribute("src", "images/홍차_아이스.jpg");
+            audio.pause();
+        }
+
+        let best12 = document.getElementById('tea3');
+        function mouseover12() {
+            audio.play();
+        }
+
+        function mouseleave12() {
+            audio.pause();
         }
 
         let best13 = document.getElementById('tea4');
         function mouseover13() {
             best13.setAttribute("src", "images/루이보스_핫.jpg");
+            audio.play();
         }
 
         function mouseleave13() {
             best13.setAttribute("src", "images/루이보스_아이스.jpg");
+            audio.pause();
         }
 
         let best14 = document.getElementById('tea5');
         function mouseover14() {
             best14.setAttribute("src", "images/히비스커스_핫.jpg");
+            audio.play();
         }
 
         function mouseleave14() {
             best14.setAttribute("src", "images/히비스커스_아이스.jpg");
+            audio.pause();
         }
 
         let best15 = document.getElementById('tea6');
         function mouseover15() {
             best15.setAttribute("src", "images/마살라차이_핫.jpg");
+            audio.play();
         }
 
         function mouseleave15() {
             best15.setAttribute("src", "images/마살라차이_아이스.jpg");
+            audio.pause();
+        }
+
+        let best16 = document.getElementById('tea7');
+        function mouseover16() {
+            audio.play();
+        }
+
+        function mouseleave16() {
+            audio.pause();
+        }
+
+        let best17 = document.getElementById('tea8');
+        function mouseover17() {
+            audio.play();
+        }
+
+        function mouseleave17() {
+            audio.pause();
+        }
+
+        let best18 = document.getElementById('tea9');
+        function mouseover18() {
+            audio.play();
+        }
+
+        function mouseleave18() {
+            audio.pause();
+        }
+
+        let best19 = document.getElementById('tea10');
+        function mouseover19() {
+            audio.play();
+        }
+
+        function mouseleave19() {
+            audio.pause();
+        }
+
+        let best20 = document.getElementById('tea11');
+        function mouseover20() {
+            audio.play();
+        }
+
+        function mouseleave20() {
+            audio.pause();
         }
 
         let best21 = document.getElementById('tea12');
         function mouseover21() {
-            best21.setAttribute("src", "images/복숭아블랜딩티_히비스커스.jpg");
+            best21.setAttribute("src", "images/복숭아블랜딩티_아이스.jpg");
+            audio.play();
         }
 
         function mouseleave21() {
-            best21.setAttribute("src", "images/복숭아블랜딩티_캐모마일.jpg");
+            best21.setAttribute("src", "images/복숭아블랜딩티_핫.jpg");
+            audio.pause();
         }
 
         let best22 = document.getElementById('latte1');
         function mouseover22() {
             best22.setAttribute("src", "images/녹차라떼_핫.jpg");
+            audio.play();
         }
 
         function mouseleave22() {
             best22.setAttribute("src", "images/녹차라떼_아이스.jpg");
+            audio.pause();
         } 
+
+        let best23 = document.getElementById('latte2');
+        function mouseover23() {
+            audio.play();
+        }
+
+        function mouseleave23() {
+            audio.pause();
+        }
+
+        let best24 = document.getElementById('latte3');
+        function mouseover24() {
+            audio.play();
+        }
+
+        function mouseleave24() {
+            audio.pause();
+        }
+
+        let best25 = document.getElementById('latte4');
+        function mouseover25() {
+            audio.play();
+        }
+
+        function mouseleave25() {
+            audio.pause();
+        }
+
+        let best26 = document.getElementById('latte5');
+        function mouseover26() {
+            audio.play();
+        }
+
+        function mouseleave26() {
+            audio.pause();
+        }
 
         let best27 = document.getElementById('latte6');
         function mouseover27() {
             best27.setAttribute("src", "images/핫초코_핫.jpg");
+            audio.play();
         }
 
         function mouseleave27() {
             best27.setAttribute("src", "images/핫초코_아이스.jpg");
+            audio.pause();
         }
+
+        let best27_1 = document.getElementById('latte7');
+        function mouseover27_1() {
+             audio.play();
+        }
+
+        function mouseleave27_1() {
+            audio.pause();
+        }
+
+        let best28 = document.getElementById('ade1');
+        function mouseover28() {
+             audio.play();
+        }
+
+        function mouseleave28() {
+            audio.pause();
+        }
+
+        let best29 = document.getElementById('ade2');
+        function mouseover29() {
+             audio.play();
+        }
+
+        function mouseleave29() {
+            audio.pause();
+        }
+
+        let best30 = document.getElementById('ade3');
+        function mouseover30() {
+             audio.play();
+        }
+
+        function mouseleave30() {
+            audio.pause();
+        }
+
+        let best31 = document.getElementById('ade4');
+        function mouseover31() {
+             audio.play();
+        }
+
+        function mouseleave31() {
+            audio.pause();
+        }
+
+        let best32 = document.getElementById('smoothie1');
+        function mouseover32() {
+             audio.play();
+        }
+
+        function mouseleave32() {
+            audio.pause();
+        }
+
+        let best33 = document.getElementById('smoothie2');
+        function mouseover33() {
+             audio.play();
+        }
+
+        function mouseleave33() {
+            audio.pause();
+        }
+
+        let best34 = document.getElementById('smoothie3');
+        function mouseover34() {
+             audio.play();
+        }
+
+        function mouseleave34() {
+            audio.pause();
+        }
+
+        let best35 = document.getElementById('smoothie4');
+        function mouseover35() {
+             audio.play();
+        }
+
+        function mouseleave35() {
+            audio.pause();
+        }
+
+        let best36 = document.getElementById('smoothie5');
+        function mouseover36() {
+             audio.play();
+        }
+
+        function mouseleave36() {
+            audio.pause();
+        }
+
+        let best37 = document.getElementById('smoothie6');
+        function mouseover37() {
+             audio.play();
+        }
+
+        function mouseleave37() {
+            audio.pause();
+        }
+
     </script>
 </body>
 
