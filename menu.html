@@ -292,7 +292,7 @@
                             <div class="arrow-down-inner"></div>
                         </div>
                         <a id="tab0" href="#tabBody0" role="tab" aria-controls="tabBody0" aria-selected="true"
-                            data-toggle="tab" tabindex="0"><span class="fa fa-desktop"></span><span
+                            data-toggle="tab" tabindex="0" onclick="menu()"><span class="fa fa-desktop"></span><span
                                 class="hidden-xs">커피</span></a>
                         <div class="whiteBlock"></div>
                     </li>
@@ -302,7 +302,7 @@
                             <div class="arrow-down-inner"></div>
                         </div>
                         <a id="tab1" href="#tabBody1" role="tab" aria-controls="tabBody1" aria-selected="true"
-                            data-toggle="tab" tabindex="0"><span class="fa fa-firefox"></span><span
+                            data-toggle="tab" tabindex="0" onclick="menu()"><span class="fa fa-firefox"></span><span
                                 class="hidden-xs">차</span></a>
                         <div class="whiteBlock"></div>
                     </li>
@@ -312,7 +312,7 @@
                             <div class="arrow-down-inner"></div>
                         </div>
                         <a id="tab2" href="#tabBody2" role="tab" aria-controls="tabBody2" aria-selected="true"
-                            data-toggle="tab" tabindex="0"><span class="fa fa-envira"></span><span
+                            data-toggle="tab" tabindex="0" onclick="menu()"><span class="fa fa-envira"></span><span
                                 class="hidden-xs">라떼</span></a>
                         <div class="whiteBlock"></div>
                     </li>
@@ -322,7 +322,7 @@
                             <div class="arrow-down-inner"></div>
                         </div>
                         <a id="tab3" href="#tabBody3" role="tab" aria-controls="tabBody3" aria-selected="true"
-                            data-toggle="tab" tabindex="0"><span class="fa fa-mortar-board"></span><span
+                            data-toggle="tab" tabindex="0" onclick="menu()"><span class="fa fa-mortar-board"></span><span
                                 class="hidden-xs">에이드/스무디</span></a>
                         <div class="whiteBlock"></div>
                     </li>
@@ -331,8 +331,8 @@
                             <div class="arrow-down-inner"></div>
                         </div>
                         <a id="tab5" href="#tabBody5" role="tab" aria-controls="tabBody4" aria-selected="true"
-                            data-toggle="tab" tabindex="0"><span class="fa fa-question-circle"></span><span
-                                class="hidden-xs">디저트</span></a>
+                            data-toggle="tab" tabindex="0" onclick="menu()"><span class="fa fa-question-circle"></span><span
+                                class="hidden-xs" onclick="menu()">디저트</span></a>
                         <div class="whiteBlock"></div>
                     </li>
                     <li class="tab fancyTab">
@@ -340,7 +340,7 @@
                             <div class="arrow-down-inner"></div>
                         </div>
                         <a id="tab5" href="#tabBody6" role="tab" aria-controls="tabBody5" aria-selected="true"
-                            data-toggle="tab" tabindex="0"><span class="fa fa-question-circle"></span><span
+                            data-toggle="tab" tabindex="0" onclick="menu()"><span class="fa fa-question-circle"></span><span
                                 class="hidden-xs">예약메뉴</span></a>
                         <div class="whiteBlock"></div>
                     </li>
@@ -576,9 +576,9 @@
                                 <img src="images/생강차_핫.jpg" alt="Lights" style="width:100%" id="tea10">
                             </div>
                             <div class="caption">
-                                생강차<br>
-                                수제청 
-                                <p>HOT 5,000원 / ICE 5,500원</p>
+                                생강차
+                                <p>수제청<br>
+                                HOT 5,000원 / ICE 5,500원</p>
                             </div>
                         </div>
                     </div>
@@ -986,8 +986,15 @@
         </div>
     </div>
     <audio id="audio" src="sound/새소리.mp3"></audio>
+    <audio id="bell" src="sound/새소리1.mp3"></audio>
     <script>            
-        let audio = document.getElementById('audio');                
+        let audio = document.getElementById('audio');    
+        let bell = document.getElementById('bell');    
+        
+        function menu() {            
+            bell.play();
+        }
+
         let best1 = document.getElementById('coffee1');
         function mouseover1() {
             best1.setAttribute("src", "images/아메리카노_핫.jpg");
@@ -1362,6 +1369,114 @@
             audio.pause();
         }
 
+        let best38 = document.getElementById('dessert1');
+        function mouseover38() {
+             audio.play();
+        }
+
+        function mouseleave38() {
+            audio.pause();
+        }
+
+        let best39 = document.getElementById('dessert2');
+        function mouseover39() {
+             audio.play();
+        }
+
+        function mouseleave39() {
+            audio.pause();
+        }
+
+        let best40 = document.getElementById('dessert3');
+        function mouseover40() {
+             audio.play();
+        }
+
+        function mouseleave40() {
+            audio.pause();
+        }
+
+        let best41 = document.getElementById('dessert4');
+        function mouseover41() {
+             audio.play();
+        }
+
+        function mouseleave41() {
+            audio.pause();
+        }
+
+        let best42 = document.getElementById('dessert5');
+        function mouseover42() {
+             audio.play();
+        }
+
+        function mouseleave42() {
+            audio.pause();
+        }
+
+        let best43 = document.getElementById('dessert6');
+        function mouseover43() {
+             audio.play();
+        }
+
+        function mouseleave43() {
+            audio.pause();
+        }
+
+        let best44 = document.getElementById('reservation1');
+        function mouseover44() {
+             audio.play();
+        }
+
+        function mouseleave44() {
+            audio.pause();
+        }
+
+        let best45 = document.getElementById('reservation2');
+        function mouseover45() {
+             audio.play();
+        }
+
+        function mouseleave45() {
+            audio.pause();
+        }
+
+        let best46 = document.getElementById('reservation3');
+        function mouseover46() {
+             audio.play();
+        }
+
+        function mouseleave46() {
+            audio.pause();
+        }        
+
+        let best47 = document.getElementById('reservation4');
+        function mouseover47() {
+             audio.play();
+        }
+
+        function mouseleave47() {
+            audio.pause();
+        }  
+
+        let best48 = document.getElementById('reservation5');
+        function mouseover48() {
+             audio.play();
+        }
+
+        function mouseleave48() {
+            audio.pause();
+        } 
+
+        let best49 = document.getElementById('reservation6');
+        function mouseover49() {
+             audio.play();
+        }
+
+        function mouseleave49() {
+            audio.pause();
+        }
+    </script>
     </script>
 </body>
 
