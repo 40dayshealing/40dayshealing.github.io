@@ -469,7 +469,7 @@
                     <div class="col-md-4">
                         <div class="thumbnail">
                             <div onclick="mouseover10()" onmouseleave="mouseleave10()">
-                                <img src="images/녹차_아이스.jpg" alt="Lights" style="width:100%" id="tea1">
+                                <img src="images/녹차_핫.jpg" alt="Lights" style="width:100%" id="tea1">
                             </div>
                             <div class="caption">
                                 녹차
@@ -480,7 +480,7 @@
                     <div class="col-md-4">
                         <div class="thumbnail">
                             <div onclick="mouseover11()" onmouseleave="mouseleave11()">
-                                <img src="images/홍차_아이스.jpg" alt="Lights" style="width:100%" id="tea2">
+                                <img src="images/홍차_핫.jpg" alt="Lights" style="width:100%" id="tea2">
                                 <div class="caption">
                                     홍차
                                     <p>HOT 3,500원 / ICE 4,000원</p>
@@ -504,7 +504,7 @@
                     <div class="col-md-4">
                         <div class="thumbnail">
                             <div onclick="mouseover13()" onmouseleave="mouseleave13()">
-                                <img src="images/루이보스_아이스.jpg" alt="Lights" style="width:100%" id="tea4">
+                                <img src="images/루이보스_핫.jpg" alt="Lights" style="width:100%" id="tea4">
                             </div>
                             <div class="caption">
                                 루이보스
@@ -515,7 +515,7 @@
                     <div class="col-md-4">
                         <div class="thumbnail">
                             <div onclick="mouseover14()" onmouseleave="mouseleave14()">
-                                <img src="images/히비스커스_아이스.jpg" alt="Lights" style="width:100%" id="tea5">
+                                <img src="images/히비스커스_핫.jpg" alt="Lights" style="width:100%" id="tea5">
                             </div>
                             <div class="caption">
                                 히비스커스
@@ -526,7 +526,7 @@
                     <div class="col-md-4">
                         <div class="thumbnail">
                             <div onclick="mouseover15()" onmouseleave="mouseleave15()">
-                                <img src="images/마살라차이_아이스.jpg" alt="Lights" style="width:100%" id="tea6">
+                                <img src="images/마살라차이_핫.jpg" alt="Lights" style="width:100%" id="tea6">
                             </div>
                             <div class="caption">
                                 마살라차이
@@ -726,7 +726,21 @@
                                     ICE 5,000원</p>
                             </div>
                         </div>
-                    </div>
+                    </div>                    
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <div onclick="mouseover27_2()" onmouseleave="mouseleave27_2()">
+                                <img src="images/복숭아에이드.jpg" alt="Lights" style="width:100%" id="ade5">
+                            </div>
+                            <div class="caption">
+                                복숭아에이드
+                                <p>수제청<br>
+                                    ICE 5,000원</p>
+                            </div>
+                        </div>
+                    </div>                  
+                </div>
+                <div class="row">
                     <div class="col-md-4">
                         <div class="thumbnail">
                             <div onclick="mouseover30()" onmouseleave="mouseleave30()">
@@ -739,8 +753,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col-md-4">
                         <div class="thumbnail">
                             <div onclick="mouseover31()" onmouseleave="mouseleave31()">
@@ -752,7 +764,8 @@
                                     ICE 5,000원</p>
                             </div>
                         </div>
-                    </div>
+                    </div>  
+
                     <div class="col-md-4">
                         <div class="thumbnail">
                             <div onclick="mouseover32()" onmouseleave="mouseleave32()">
@@ -761,10 +774,12 @@
                             <div class="caption">
                                 딸기 스무디
                                 <p>요거트<br>
-                                    6,000원</p>
+                                    ICE 6,000원</p>
                             </div>
                         </div>
-                    </div>
+                    </div>                    
+                </div>
+                <div class="row">
                     <div class="col-md-4">
                         <div class="thumbnail">
                             <div onclick="mouseover33()" onmouseleave="mouseleave33()">
@@ -773,12 +788,10 @@
                             <div class="caption">
                                 블루베리 스무디
                                 <p>요거트<br>
-                                    6,000원</p>
+                                    ICE 6,000원</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col-md-4">
                         <div class="thumbnail">
                             <div onclick="mouseover34()" onmouseleave="mouseleave34()">
@@ -801,7 +814,9 @@
                                 <p>ICE 6,000원</p>
                             </div>
                         </div>
-                    </div>
+                    </div>                    
+                </div>
+                <div class="row">
                     <div class="col-md-4">
                         <div class="thumbnail">
                             <div onclick="mouseover36()" onmouseleave="mouseleave36()">
@@ -814,8 +829,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col-md-4">
                         <div class="thumbnail">
                             <div onclick="mouseover37()" onmouseleave="mouseleave37()">
@@ -835,7 +848,7 @@
                             </div>
                             <div class="caption">
                                 망고소다
-                                <p>2,000원</p>
+                                <p>ICE 2,000원</p>
                             </div>
                         </div>
                     </div>
@@ -1099,22 +1112,22 @@
 
         let best10 = document.getElementById('tea1');
         function mouseover10() {
-            best10.setAttribute("src", "images/녹차_핫.jpg");
+            best10.setAttribute("src", "images/녹차_아이스.jpg");
             audio.play();
         }
 
         function mouseleave10() {
-            best10.setAttribute("src", "images/녹차_아이스.jpg");
+            best10.setAttribute("src", "images/녹차_핫.jpg");
         }
 
         let best11 = document.getElementById('tea2');
         function mouseover11() {
-            best11.setAttribute("src", "images/홍차_핫.jpg");
+            best11.setAttribute("src", "images/홍차_아이스.jpg");
             audio.play();
         }
 
         function mouseleave11() {
-            best11.setAttribute("src", "images/홍차_아이스.jpg");
+            best11.setAttribute("src", "images/홍차_핫.jpg");
         }
 
         let best12 = document.getElementById('tea3');
@@ -1127,32 +1140,32 @@
 
         let best13 = document.getElementById('tea4');
         function mouseover13() {
-            best13.setAttribute("src", "images/루이보스_핫.jpg");
+            best13.setAttribute("src", "images/루이보스_아이스.jpg");
             audio.play();
         }
 
         function mouseleave13() {
-            best13.setAttribute("src", "images/루이보스_아이스.jpg");
+            best13.setAttribute("src", "images/루이보스_핫.jpg");
         }
 
         let best14 = document.getElementById('tea5');
         function mouseover14() {
-            best14.setAttribute("src", "images/히비스커스_핫.jpg");
+            best14.setAttribute("src", "images/히비스커스_아이스.jpg");
             audio.play();
         }
 
         function mouseleave14() {
-            best14.setAttribute("src", "images/히비스커스_아이스.jpg");
+            best14.setAttribute("src", "images/히비스커스_핫.jpg");
         }
 
         let best15 = document.getElementById('tea6');
         function mouseover15() {
-            best15.setAttribute("src", "images/마살라차이_핫.jpg");
+            best15.setAttribute("src", "images/마살라차이_아이스.jpg");
             audio.play();
         }
 
         function mouseleave15() {
-            best15.setAttribute("src", "images/마살라차이_아이스.jpg");
+            best15.setAttribute("src", "images/마살라차이_핫.jpg");
         }
 
         let best16 = document.getElementById('tea7');
@@ -1263,6 +1276,14 @@
         }
 
         function mouseleave27_1() {
+        }
+
+        let best27_2 = document.getElementById('ade5');
+        function mouseover27_1() {
+             audio.play();
+        }
+
+        function mouseleave27_2() {
         }
 
         let best28 = document.getElementById('ade1');
