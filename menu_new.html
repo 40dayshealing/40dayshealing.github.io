@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>메뉴</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        .container-fluid {
+            background-color: white;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Nanum Myeongjo', serif;
+            font-weight: 700;
+        }
+
+        .content {
+            margin-top: 100px;
+        }
+
+        body {
+            font-size: 26px;
+            font-family: 'Nanum Myeongjo', serif;
+            background-color: white;
+        }
+
+        p {
+            font-size: 26px;
+        }
+
+        .caption {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .caption p {
+            font-weight: normal;
+        }
+
+        .comment {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        li a {
+            color: #024e0d;
+        }
+
+        li a:hover {
+            color: brown;
+        }
+
+        .nav {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav nav-tabs navbar-fixed-top">
+        <li><a data-toggle="tab" id="tab0" href="#tabBody0" onclick="menu()" tabindex="0">커피</a></li>
+        <li><a data-toggle="tab" id="tab1" href="#tabBody1" onclick="menu()" tabindex="1">차</a></li>
+        <li><a data-toggle="tab" id="tab2" href="#tabBody2" onclick="menu()" tabindex="2">라떼</a></li>
+        <li><a data-toggle="tab" id="tab3" href="#tabBody3" onclick="menu()" tabindex="3">에이드/스무디</a></li>
+        <li><a data-toggle="tab" id="tab4" href="#tabBody4" onclick="menu()" tabindex="4">디저트</a></li>
+        <li><a data-toggle="tab" id="tab5" href="#tabBody5" onclick="menu()" tabindex="5">예약메뉴</a></li>
+        <li><a data-toggle="tab" id="tab5" href="#tabBody6" onclick="menu()" tabindex="6">상담</a></li>
+        <li><a data-toggle="tab" id="tab5" href="#tabBody7" onclick="menu()" tabindex="7">대관</a></li>
+    </ul>
+    <br><br>
+    <div class="tab-content">
+        <div id="tabBody0" class="tab-pane fade in active">
+            <div id="myCarousel0" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel0" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel0" data-slide-to="1"></li>
+                    <li data-target="#myCarousel0" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover1()" onmouseleave="mouseleave1()">
+                                        <img src="images/아메리카노_아이스.jpg" alt="아메리카노" style="width:100%" id="coffee1">
+                                    </div>
+                                    <div class="caption">
+                                        아메리카노
+                                        <p>HOT 3,000원 / ICE 3,500원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover2()" onmouseleave="mouseleave2()">
+                                        <img src="images/카페라떼_아이스.jpg" alt="카페라떼" style="width:100%" id="coffee2">
+                                    </div>
+                                    <div class="caption">
+                                        카페라떼
+                                        <p>HOT 3,500원 / ICE 4,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover3()" onmouseleave="mouseleave3()">
+                                        <img src="images/바닐라라떼_아이스.jpg" alt="Lights" style="width:100%" id="coffee3">
+                                    </div>
+                                    <div class="caption">
+                                        바닐라라떼
+                                        <p>HOT 4,000원 / ICE 4,500원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover4()" onmouseleave="mouseleave4()">
+                                        <img src="images/카페모카_아이스.jpg" alt="Lights" style="width:100%" id="coffee4">
+                                    </div>
+                                    <div class="caption">
+                                        카페모카
+                                        <p>HOT 4,000원 / ICE 4,500원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover5()" onmouseleave="mouseleave5()">
+                                        <img src="images/캬라멜마끼아또_아이스.jpg" alt="Lights" style="width:100%" id="coffee5">
+                                    </div>
+                                    <div class="caption">
+                                        캬라멜 마끼아또
+                                        <p>HOT 4,000원 / ICE 4,500원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover6()" onmouseleave="mouseleave6()">
+                                        <img src="images/아몬드카페라떼_아이스.jpg" alt="Lights" style="width:100%" id="coffee6">
+                                    </div>
+                                    <div class="caption">
+                                        아몬드 카페라떼
+                                        <p>HOT 5,000원 / ICE 5,500원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover7()" onmouseleave="mouseleave7()">
+                                        <img src="images/아인슈페너_아이스.jpg" alt="Lights" style="width:100%" id="coffee7">
+                                    </div>
+                                    <div class="caption">
+                                        아인슈페너
+                                        <p>HOT 5,000원 / ICE 5,500원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover8()" onmouseleave="mouseleave8()">
+                                        <img src="images/돌체라떼.jpg" alt="Lights" style="width:100%" id="coffee8">
+                                    </div>
+                                    <div class="caption">
+                                        돌체라떼
+                                        <p>HOT 5,000원 / ICE 5,500원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover9()" onmouseleave="mouseleave9()">
+                                        <img src="images/핸드드립_핫.jpg" alt="Lights" style="width:100%" id="coffee9">
+                                    </div>
+                                    <div class="caption">
+                                        핸드드립
+                                        <p>HOT 5,000원 / ICE 5,500원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel0" data-slide="prev"
+                    style="background:none !important">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel0" data-slide="next"
+                    style="background:none !important">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <p class="footer fixed-bottom comment">※ 2샷 추가 1,500원 / 리필 2,000원</p>
+        </div>
+        <div id="tabBody1" class="tab-pane fade">
+            <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel1" data-slide-to="1"></li>
+                    <li data-target="#myCarousel1" data-slide-to="2"></li>
+                    <li data-target="#myCarousel1" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover10()" onmouseleave="mouseleave10()">
+                                        <img src="images/녹차_핫.jpg" alt="Lights" style="width:100%" id="tea1">
+                                    </div>
+                                    <div class="caption">
+                                        녹차
+                                        <p>HOT 3,500원 / ICE 4,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover11()" onmouseleave="mouseleave11()">
+                                        <img src="images/홍차_핫.jpg" alt="Lights" style="width:100%" id="tea2">
+                                        <div class="caption">
+                                            홍차
+                                            <p>HOT 3,500원 / ICE 4,000원</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover12()" onmouseleave="mouseleave12()">
+                                        <img src="images/캐모마일_핫.jpg" alt="Lights" style="width:100%" id="tea3">
+                                    </div>
+                                    <div class="caption">
+                                        캐모마일
+                                        <p>HOT 4,000원 / ICE 4,500원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover13()" onmouseleave="mouseleave13()">
+                                        <img src="images/루이보스_핫.jpg" alt="Lights" style="width:100%" id="tea4">
+                                    </div>
+                                    <div class="caption">
+                                        루이보스
+                                        <p>HOT 4,000원 / ICE 4,500원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover14()" onmouseleave="mouseleave14()">
+                                        <img src="images/히비스커스_핫.jpg" alt="Lights" style="width:100%" id="tea5">
+                                    </div>
+                                    <div class="caption">
+                                        히비스커스
+                                        <p>HOT 4,000원 / ICE 4,500원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover15()" onmouseleave="mouseleave15()">
+                                        <img src="images/마살라차이_핫.jpg" alt="Lights" style="width:100%" id="tea6">
+                                    </div>
+                                    <div class="caption">
+                                        마살라차이
+                                        <p>HOT 4,000원 / ICE 4,500원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover16()" onmouseleave="mouseleave16()">
+                                        <img src="images/메리골드티_핫.jpg" alt="Lights" style="width:100%" id="tea7">
+                                    </div>
+                                    <div class="caption">
+                                        메리골드티<br><br>
+                                        <p>HOT 5,000원 / ICE 5,500원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover17()" onmouseleave="mouseleave17()">
+                                        <img src="images/다즐링티_핫.jpg" alt="Lights" style="width:100%" id="tea8">
+                                    </div>
+                                    <div class="caption">
+                                        프리미엄 다즐링티
+                                        <p>인도산<br>
+                                            HOT 5,000원 / ICE 5,500원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover18()" onmouseleave="mouseleave18()">
+                                        <img src="images/블랙티_핫.jpg" alt="Lights" style="width:100%" id="tea9">
+                                    </div>
+                                    <div class="caption">
+                                        프리미엄 블랙티
+                                        <p>인도산<br>
+                                            HOT 5,000원 / ICE 5,500원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover19()" onmouseleave="mouseleave19()">
+                                        <img src="images/생강차_핫.jpg" alt="Lights" style="width:100%" id="tea10">
+                                    </div>
+                                    <div class="caption">
+                                        생강차
+                                        <p>수제청<br>
+                                            HOT 5,000원 / ICE 5,500원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover20()" onmouseleave="mouseleave20()">
+                                        <img src="images/레몬블랜딩티_핫.jpg" alt="Lights" style="width:100%" id="tea11">
+                                    </div>
+                                    <div class="caption">
+                                        레몬 블랜딩티
+                                        <p>녹차/홍차/허브티 중 선택<br>
+                                            HOT 5,000원 / ICE 5,500원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover21()" onmouseleave="mouseleave21()">
+                                        <img src="images/복숭아블랜딩티_핫.jpg" alt="Lights" style="width:100%" id="tea12">
+                                    </div>
+                                    <div class="caption">
+                                        복숭아 블랜딩티
+                                        <p>녹차/홍차/허브티 중 선택<br>
+                                            HOT 5,000원 / ICE 5,500원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel1" data-slide="prev"
+                    style="background:none !important">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel1" data-slide="next"
+                    style="background:none !important">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div id="tabBody2" class="tab-pane fade">
+            <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel2" data-slide-to="1"></li>
+                    <li data-target="#myCarousel2" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover22()" onmouseleave="mouseleave22()">
+                                        <img src="images/녹차라떼_아이스.jpg" alt="Lights" style="width:100%" id="latte1">
+                                    </div>
+                                    <div class="caption">
+                                        녹차라떼<br><br>
+                                        <p>HOT 4,000원 / ICE 4,500원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover24()" onmouseleave="mouseleave24()">
+                                        <img src="images/딸기라떼.jpg" alt="Lights" style="width:100%" id="latte3">
+                                    </div>
+                                    <div class="caption">
+                                        딸기라떼
+                                        <p>수제청<br>
+                                            ICE 5,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover27()" onmouseleave="mouseleave27()">
+                                        <img src="images/핫초코_아이스.jpg" alt="Lights" style="width:100%" id="latte6">
+                                    </div>
+                                    <div class="caption">
+                                        핫초코/핫민트초코<br><br>
+                                        <p>HOT 5,000원 / ICE 5,500원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover23()" onmouseleave="mouseleave23()">
+                                        <img src="images/생강라떼_핫.jpg" alt="Lights" style="width:100%" id="latte2">
+                                    </div>
+                                    <div class="caption">
+                                        생강라떼
+                                        <p>수제청<br>
+                                            HOT 5,000원 / ICE 5,500원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover25()" onmouseleave="mouseleave25()">
+                                        <img src="images/쑥라떼_핫.jpg" alt="Lights" style="width:100%" id="latte4">
+                                    </div>
+                                    <div class="caption">
+                                        쑥라떼<br><br>
+                                        <p>HOT 5,000원 / ICE 5,500원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover26()" onmouseleave="mouseleave26()">
+                                        <img src="images/팥라떼_핫.jpg" alt="Lights" style="width:100%" id="latte5">
+                                    </div>
+                                    <div class="caption">
+                                        팥라떼<br><br>
+                                        <p>HOT 5,000원 / ICE 5,500원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="comment">※ 쑥라떼는 생크림이 포함되어 있고, 팥라떼는 생크림이 포함되어 있지 않습니다. 생크림이 필요하시면 미리 얘기해 주세요.</p>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover27_1()" onmouseleave="mouseleave27_1()">
+                                        <img src="images/런던포그밀크티_아이스.jpg" alt="Lights" style="width:100%" id="latte7">
+                                    </div>
+                                    <div class="caption">
+                                        런던포그 밀크티
+                                        <p>HOT 5,000원 / ICE 5,500원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel2" data-slide="prev"
+                    style="background:none !important">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel2" data-slide="next"
+                    style="background:none !important">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div id="tabBody3" class="tab-pane fade">
+            <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel3" data-slide-to="1"></li>
+                    <li data-target="#myCarousel3" data-slide-to="2"></li>
+                    <li data-target="#myCarousel3" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover28()" onmouseleave="mouseleave28()">
+                                        <img src="images/레몬에이드.jpg" alt="Lights" style="width:100%" id="ade1">
+                                    </div>
+                                    <div class="caption">
+                                        레몬에이드
+                                        <p>수제청<br>
+                                            ICE 5,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover29()" onmouseleave="mouseleave29()">
+                                        <img src="images/체리레몬에이드.jpg" alt="Lights" style="width:100%" id="ade2">
+                                    </div>
+                                    <div class="caption">
+                                        체리 레몬에이드
+                                        <p>레몬 수제청<br>
+                                            ICE 5,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover27_2()" onmouseleave="mouseleave27_2()">
+                                        <img src="images/복숭아에이드.jpg" alt="Lights" style="width:100%" id="ade5">
+                                    </div>
+                                    <div class="caption">
+                                        복숭아에이드
+                                        <p>수제청<br>
+                                            ICE 5,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover30()" onmouseleave="mouseleave30()">
+                                        <img src="images/딸기에이드.jpg" alt="Lights" style="width:100%" id="ade3">
+                                    </div>
+                                    <div class="caption">
+                                        딸기에이드
+                                        <p>수제청<br>
+                                            ICE 5,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover31()" onmouseleave="mouseleave31()">
+                                        <img src="images/블루베리에이드.jpg" alt="Lights" style="width:100%" id="ade4">
+                                    </div>
+                                    <div class="caption">
+                                        블루베리에이드
+                                        <p>수제청<br>
+                                            ICE 5,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover32()" onmouseleave="mouseleave32()">
+                                        <img src="images/딸기스무디.jpg" alt="Lights" style="width:100%" id="smoothie1">
+                                    </div>
+                                    <div class="caption">
+                                        딸기 스무디
+                                        <p>요거트<br>
+                                            ICE 6,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover33()" onmouseleave="mouseleave33()">
+                                        <img src="images/블루베리스무디.jpg" alt="Lights" style="width:100%" id="smoothie2">
+                                    </div>
+                                    <div class="caption">
+                                        블루베리 스무디
+                                        <p>요거트<br>
+                                            ICE 6,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover34()" onmouseleave="mouseleave34()">
+                                        <img src="images/망고스무디.jpg" alt="Lights" style="width:100%" id="smoothie3">
+                                    </div>
+                                    <div class="caption">
+                                        망고 스무디
+                                        <p>요거트<br>
+                                            ICE 6,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover35()" onmouseleave="mouseleave35()">
+                                        <img src="images/망고코코넛.jpg" alt="Lights" style="width:100%" id="smoothie4">
+                                    </div>
+                                    <div class="caption">
+                                        망고 코코넛밀크<br><br>
+                                        <p>ICE 6,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover36()" onmouseleave="mouseleave36()">
+                                        <img src="images/피나콜라다.jpg" alt="Lights" style="width:100%" id="smoothie5">
+                                    </div>
+                                    <div class="caption">
+                                        무알콜 피나콜라다
+                                        <p>파인애플, 코코넛밀크<br>
+                                            ICE 6,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover37()" onmouseleave="mouseleave37()">
+                                        <img src="images/옛날빙수.jpg" alt="Lights" style="width:100%" id="smoothie6">
+                                    </div>
+                                    <div class="caption">
+                                        옛날빙수
+                                        <p>딸기 수제청<br>
+                                            6,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover50()" onmouseleave="mouseleave50()">
+                                        <img src="images/망고소다.jpg" alt="Lights" style="width:100%" id="smoothie7">
+                                    </div>
+                                    <div class="caption">
+                                        망고소다<br><br>
+                                        <p>ICE 2,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel3" data-slide="prev"
+                    style="background:none !important">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel3" data-slide="next"
+                    style="background:none !important">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div id="tabBody4" class="tab-pane fade">
+            <div id="myCarousel4" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel4" data-slide-to="1"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover38()" onmouseleave="mouseleave38()">
+                                        <img src="images/크로플_브라운치즈.jpg" alt="Lights" style="width:100%" id="dessert1">
+                                    </div>
+                                    <div class="caption">
+                                        브라운치즈 크로플
+                                        <p>5,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover39()" onmouseleave="mouseleave39()">
+                                        <img src="images/크로플_인절미.jpg" alt="Lights" style="width:100%" id="dessert2">
+                                    </div>
+                                    <div class="caption">
+                                        인절미 크로플
+                                        <p>5,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover40()" onmouseleave="mouseleave40()">
+                                        <img src="images/크로플_앙버터.jpg" alt="Lights" style="width:100%" id="dessert3">
+                                    </div>
+                                    <div class="caption">
+                                        앙버터 크로플
+                                        <p>5,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover41()" onmouseleave="mouseleave41()">
+                                        <img src="images/우유생크림카스테라.jpg" alt="Lights" style="width:100%" id="dessert4">
+                                    </div>
+                                    <div class="caption">
+                                        우유 생크림 카스테라<br><br>
+                                        <p>3,500원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover42()" onmouseleave="mouseleave42()">
+                                        <img src="images/크라상샌드위치.jpg" alt="Lights" style="width:100%" id="dessert5">
+                                    </div>
+                                    <div class="caption">
+                                        햄치즈 샌드위치
+                                        <p>햄: 국내산<br>
+                                            6,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover43()" onmouseleave="mouseleave43()">
+                                        <img src="images/크로크무슈.jpg" alt="Lights" style="width:100%" id="dessert6">
+                                    </div>
+                                    <div class="caption">
+                                        크로크 무슈
+                                        <p class="comment">빵 사이에 햄과 치즈를 넣고 구워낸<br>
+                                            프랑스식 샌드위치<br>
+                                            6,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel4" data-slide="prev"
+                    style="background:none !important">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel4" data-slide="next"
+                    style="background:none !important">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div id="tabBody5" class="tab-pane fade">
+            <div id="myCarousel5" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel5" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel5" data-slide-to="1"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover44()" onmouseleave="mouseleave44()">
+                                        <img src="images/카프레제샌드위치.jpg" alt="Lights" style="width:100%"
+                                            id="reservation1">
+                                    </div>
+                                    <div class="caption">
+                                        카프레제 샌드위치<br><br>
+                                        <p>8,500원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover45()" onmouseleave="mouseleave45()">
+                                        <img src="images/크로플_브라운치즈.jpg" alt="Lights" style="width:100%"
+                                            id="reservation2">
+                                    </div>
+                                    <div class="caption">
+                                        브라타치즈 크로플<br><br>
+                                        <p>9,500원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover46()" onmouseleave="mouseleave46()">
+                                        <img src="images/카프레제.jpg" alt="Lights" style="width:100%" id="reservation3">
+                                    </div>
+                                    <div class="caption">
+                                        카프레제
+                                        <p class="comment">이태리식 샐러드<br>
+                                            생모짜렐라치즈 6개 기준<br>
+                                            1조각 2,000원 / 12,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover47()" onmouseleave="mouseleave47()">
+                                        <img src="images/브루스케타.jpg" alt="Lights" style="width:100%" id="reservation4">
+                                    </div>
+                                    <div class="caption">
+                                        브루스케타
+                                        <p class="comment">토마토 2 / 훈제연어 2 / <br>
+                                            파르마 프로슈토 1 (이탈리안 건염 생햄)<br>
+                                            15,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover48()" onmouseleave="mouseleave48()">
+                                        <img src="images/병아리콩쿠키_스모어.jpg" alt="Lights" style="width:100%"
+                                            id="reservation5">
+                                    </div>
+                                    <div class="caption">
+                                        병아리콩 스모어쿠키
+                                        <p class="comment">핸드메이드 (초코/녹차)<br>
+                                            개당 1,000원 / 6개 5,000원 /<br>
+                                            12개 10,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover49()" onmouseleave="mouseleave49()">
+                                        <img src="images/병아리콩쿠키_견과.jpg" alt="Lights" style="width:100%"
+                                            id="reservation6">
+                                    </div>
+                                    <div class="caption">
+                                        병아리콩 견과쿠키
+                                        <p class="comment">핸드메이드 (초코/녹차)<br>
+                                            개당 1,000원 / 6개 5,000원 /<br>
+                                            12개 10,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="footer fixed-bottom comment">※ 카페 대관시 이용할 수 있는 메뉴들 입니다. 미리 예약해 주세요.</p>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel5" data-slide="prev"
+                    style="background:none !important">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel5" data-slide="next"
+                    style="background:none !important">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div id="tabBody6" class="tab-pane fade">
+            <div id="myCarousel6" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel6" data-slide-to="0" class="active"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover51()" onmouseleave="mouseleave51()">
+                                        <img src="images/심리상담_한국어.jpg" alt="Lights" style="width:100%"
+                                            id="counseling_ko">
+                                    </div>
+                                    <div class="caption">
+                                        1시간 심리상담/한국어
+                                        <p class="comment">
+                                        심리상담사가 내담자의 문제, 고통, 고민등을 공감적청취에 기반해 전문 상담. 음료 포함</p>
+                                        <p>30,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover52()" onmouseleave="mouseleave52()">
+                                        <img src="images/심리상담_영어.jpg" alt="Lights" style="width:100%"
+                                            id="counseling_en">
+                                    </div>
+                                    <div class="caption">
+                                        1시간 심리상담/영어
+                                        <p class="comment">
+                                        한국인 외국인 상관없이, 영어로 자신의 문제를 얘기하고, 상담하는 서비스, 음료포함</p>
+                                        <p>50,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tabBody7" class="tab-pane fade">
+            <div id="myCarousel7" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel7" data-slide-to="0" class="active"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover53()" onmouseleave="mouseleave53()">
+                                        <img src="images/대관_전시.jpg" alt="Lights" style="width:100%"
+                                            id="exhibit">
+                                    </div>
+                                    <div class="caption">
+                                        1일 전시대관
+                                        <p class="comment">
+                                        전시대관은 최소 20일에서, 최대 40일까지 전시 하실수 있어요. 세부 전시문의 주세요</p>
+                                        <p>10,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover54()" onmouseleave="mouseleave54()">
+                                        <img src="images/대관_엔틱룸.jpg" alt="Lights" style="width:100%"
+                                            id="antiqueroom">
+                                    </div>
+                                    <div class="caption">
+                                        엔틱룸 공간대관/대여
+                                        <p class="comment">
+                                        첫 1시간 대관료는 5만원 (3만원 음료 포함), 이 후 시간당 3만원, 청소비 1만원</p>
+                                        <p>30,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover55()" onmouseleave="mouseleave55()">
+                                        <img src="images/대관_전체.jpg" alt="Lights" style="width:100%"
+                                            id="rooms">
+                                    </div>
+                                    <div class="caption">
+                                        전체대관 (2개룸)
+                                        <p class="comment">
+                                        엔틱룸 포함. 카페 전체를 대관하는 경우, 시간당 6만원, 청소비 2만원<br><br></p>
+                                        <p>60,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                    <div onclick="mouseover56()" onmouseleave="mouseleave56()">
+                                        <img src="images/대관_촬영.jpg" alt="Lights" style="width:100%"
+                                            id="rooms">
+                                    </div>
+                                    <div class="caption">
+                                        촬영대관
+                                        <p class="comment">
+                                            조명 등 전기사용요금 별도. 카페 영업 불가 시 시간 당 10만원 부과<br><br> 
+                                        </p>
+                                        <p>50,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="audio" src="sound/새소리.mp3"></audio>
+    <audio id="bell" src="sound/새소리1.mp3"></audio>
+    <script>
+        let audio = document.getElementById('audio');
+        let bell = document.getElementById('bell');
+
+        function menu() {
+            bell.play();
+        }
+
+        let best1 = document.getElementById('coffee1');
+        function mouseover1() {
+            best1.setAttribute("src", "images/아메리카노_핫.jpg");
+            audio.play();
+        }
+
+        function mouseleave1() {
+            best1.setAttribute("src", "images/아메리카노_아이스.jpg");
+        }
+
+        let best2 = document.getElementById('coffee2');
+        function mouseover2() {
+            best2.setAttribute("src", "images/카페라떼_핫.jpg");
+            audio.play();
+        }
+
+        function mouseleave2() {
+            best2.setAttribute("src", "images/카페라떼_아이스.jpg");
+        }
+
+        let best3 = document.getElementById('coffee3');
+        function mouseover3() {
+            best3.setAttribute("src", "images/바닐라라떼_핫.jpg");
+            audio.play();
+        }
+
+        function mouseleave3() {
+            best3.setAttribute("src", "images/바닐라라떼_아이스.jpg");
+        }
+
+        let best4 = document.getElementById('coffee4');
+        function mouseover4() {
+            best4.setAttribute("src", "images/카페모카_핫.jpg");
+            audio.play();
+        }
+
+        function mouseleave4() {
+            best4.setAttribute("src", "images/카페모카_아이스.jpg");
+        }
+
+        let best5 = document.getElementById('coffee5');
+        function mouseover5() {
+            best5.setAttribute("src", "images/캬라멜마끼아또_핫.jpg");
+            audio.play();
+        }
+
+        function mouseleave5() {
+            best5.setAttribute("src", "images/캬라멜마끼아또_아이스.jpg");
+        }
+
+        let best6 = document.getElementById('coffee6');
+        function mouseover6() {
+            best6.setAttribute("src", "images/아몬드카페라떼_핫.jpg");
+            audio.play();
+        }
+
+        function mouseleave6() {
+            best6.setAttribute("src", "images/아몬드카페라떼_아이스.jpg");
+        }
+
+        let best7 = document.getElementById('coffee7');
+        function mouseover7() {
+            best7.setAttribute("src", "images/아인슈페너.jpg");
+            audio.play();
+        }
+
+        function mouseleave7() {
+            best7.setAttribute("src", "images/아인슈페너_아이스.jpg");
+        }
+
+        let best8 = document.getElementById('coffee8');
+        function mouseover8() {
+            audio.play();
+        }
+
+        function mouseleave8() {
+        }
+
+        let best9 = document.getElementById('coffee9');
+        function mouseover9() {
+            best9.setAttribute("src", "images/핸드드립.jpg");
+            audio.play();
+        }
+
+        function mouseleave9() {
+            best9.setAttribute("src", "images/핸드드립_핫.jpg");
+        }
+
+        let best10 = document.getElementById('tea1');
+        function mouseover10() {
+            best10.setAttribute("src", "images/녹차_아이스.jpg");
+            audio.play();
+        }
+
+        function mouseleave10() {
+            best10.setAttribute("src", "images/녹차_핫.jpg");
+        }
+
+        let best11 = document.getElementById('tea2');
+        function mouseover11() {
+            best11.setAttribute("src", "images/홍차_아이스.jpg");
+            audio.play();
+        }
+
+        function mouseleave11() {
+            best11.setAttribute("src", "images/홍차_핫.jpg");
+        }
+
+        let best12 = document.getElementById('tea3');
+        function mouseover12() {
+            best12.setAttribute("src", "images/캐모마일_아이스.jpg");
+            audio.play();
+        }
+
+        function mouseleave12() {
+            best12.setAttribute("src", "images/캐모마일_핫.jpg");
+        }
+
+
+        let best13 = document.getElementById('tea4');
+        function mouseover13() {
+            best13.setAttribute("src", "images/루이보스_아이스.jpg");
+            audio.play();
+        }
+
+        function mouseleave13() {
+            best13.setAttribute("src", "images/루이보스_핫.jpg");
+        }
+
+        let best14 = document.getElementById('tea5');
+        function mouseover14() {
+            best14.setAttribute("src", "images/히비스커스_아이스.jpg");
+            audio.play();
+        }
+
+        function mouseleave14() {
+            best14.setAttribute("src", "images/히비스커스_핫.jpg");
+        }
+
+        let best15 = document.getElementById('tea6');
+        function mouseover15() {
+            best15.setAttribute("src", "images/마살라차이_아이스.jpg");
+            audio.play();
+        }
+
+        function mouseleave15() {
+            best15.setAttribute("src", "images/마살라차이_핫.jpg");
+        }
+
+        let best16 = document.getElementById('tea7');
+        function mouseover16() {
+            best16.setAttribute("src", "images/메리골드티_아이스.jpg");
+            audio.play();
+        }
+
+        function mouseleave16() {
+            best16.setAttribute("src", "images/메리골드티_핫.jpg");
+        }
+
+        let best17 = document.getElementById('tea8');
+        function mouseover17() {
+            audio.play();
+        }
+
+        function mouseleave17() {
+        }
+
+        let best18 = document.getElementById('tea9');
+        function mouseover18() {
+            audio.play();
+        }
+
+        function mouseleave18() {
+        }
+
+        let best19 = document.getElementById('tea10');
+        function mouseover19() {
+            audio.play();
+        }
+
+        function mouseleave19() {
+        }
+
+        let best20 = document.getElementById('tea11');
+        function mouseover20() {
+            best20.setAttribute("src", "images/레몬블랜딩티_아이스.jpg");
+            audio.play();
+        }
+
+        function mouseleave20() {
+            best20.setAttribute("src", "images/레몬블랜딩티_핫.jpg");
+        }
+
+        let best21 = document.getElementById('tea12');
+        function mouseover21() {
+            best21.setAttribute("src", "images/복숭아블랜딩티_아이스.jpg");
+            audio.play();
+        }
+
+        function mouseleave21() {
+            best21.setAttribute("src", "images/복숭아블랜딩티_핫.jpg");
+        }
+
+        let best22 = document.getElementById('latte1');
+        function mouseover22() {
+            best22.setAttribute("src", "images/녹차라떼_핫.jpg");
+            audio.play();
+        }
+
+        function mouseleave22() {
+            best22.setAttribute("src", "images/녹차라떼_아이스.jpg");
+        }
+
+        let best23 = document.getElementById('latte2');
+        function mouseover23() {
+            audio.play();
+        }
+
+        function mouseleave23() {
+        }
+
+        let best24 = document.getElementById('latte3');
+        function mouseover24() {
+            audio.play();
+        }
+
+        function mouseleave24() {
+        }
+
+        let best25 = document.getElementById('latte4');
+        function mouseover25() {
+            audio.play();
+        }
+
+        function mouseleave25() {
+        }
+
+        let best26 = document.getElementById('latte5');
+        function mouseover26() {
+            audio.play();
+        }
+
+        function mouseleave26() {
+        }
+
+        let best27 = document.getElementById('latte6');
+        function mouseover27() {
+            best27.setAttribute("src", "images/핫초코_핫.jpg");
+            audio.play();
+        }
+
+        function mouseleave27() {
+            best27.setAttribute("src", "images/핫초코_아이스.jpg");
+        }
+
+        let best27_1 = document.getElementById('latte7');
+        function mouseover27_1() {
+            audio.play();
+        }
+
+        function mouseleave27_1() {
+        }
+
+        let best27_2 = document.getElementById('ade5');
+        function mouseover27_1() {
+            audio.play();
+        }
+
+        function mouseleave27_2() {
+        }
+
+        let best28 = document.getElementById('ade1');
+        function mouseover28() {
+            audio.play();
+        }
+
+        function mouseleave28() {
+        }
+
+        let best29 = document.getElementById('ade2');
+        function mouseover29() {
+            audio.play();
+        }
+
+        function mouseleave29() {
+        }
+
+        let best30 = document.getElementById('ade3');
+        function mouseover30() {
+            audio.play();
+        }
+
+        function mouseleave30() {
+        }
+
+        let best31 = document.getElementById('ade4');
+        function mouseover31() {
+            audio.play();
+        }
+
+        function mouseleave31() {
+        }
+
+        let best32 = document.getElementById('smoothie1');
+        function mouseover32() {
+            audio.play();
+        }
+
+        function mouseleave32() {
+        }
+
+        let best33 = document.getElementById('smoothie2');
+        function mouseover33() {
+            audio.play();
+        }
+
+        function mouseleave33() {
+        }
+
+        let best34 = document.getElementById('smoothie3');
+        function mouseover34() {
+            audio.play();
+        }
+
+        function mouseleave34() {
+        }
+
+        let best35 = document.getElementById('smoothie4');
+        function mouseover35() {
+            audio.play();
+        }
+
+        function mouseleave35() {
+        }
+
+        let best36 = document.getElementById('smoothie5');
+        function mouseover36() {
+            audio.play();
+        }
+
+        function mouseleave36() {
+        }
+
+        let best37 = document.getElementById('smoothie6');
+        function mouseover37() {
+            audio.play();
+        }
+
+        function mouseleave37() {
+        }
+
+        let best50 = document.getElementById('smoothie7');
+        function mouseover50() {
+            audio.play();
+        }
+
+        function mouseleave50() {
+        }
+
+        let best38 = document.getElementById('dessert1');
+        function mouseover38() {
+            audio.play();
+        }
+
+        function mouseleave38() {
+        }
+
+        let best39 = document.getElementById('dessert2');
+        function mouseover39() {
+            audio.play();
+        }
+
+        function mouseleave39() {
+        }
+
+        let best40 = document.getElementById('dessert3');
+        function mouseover40() {
+            audio.play();
+        }
+
+        function mouseleave40() {
+        }
+
+        let best41 = document.getElementById('dessert4');
+        function mouseover41() {
+            audio.play();
+        }
+
+        function mouseleave41() {
+        }
+
+        let best42 = document.getElementById('dessert5');
+        function mouseover42() {
+            audio.play();
+        }
+
+        function mouseleave42() {
+        }
+
+        let best43 = document.getElementById('dessert6');
+        function mouseover43() {
+            audio.play();
+        }
+
+        function mouseleave43() {
+        }
+
+        let best44 = document.getElementById('reservation1');
+        function mouseover44() {
+            audio.play();
+        }
+
+        function mouseleave44() {
+        }
+
+        let best45 = document.getElementById('reservation2');
+        function mouseover45() {
+            audio.play();
+        }
+
+        function mouseleave45() {
+        }
+
+        let best46 = document.getElementById('reservation3');
+        function mouseover46() {
+            audio.play();
+        }
+
+        function mouseleave46() {
+        }
+
+        let best47 = document.getElementById('reservation4');
+        function mouseover47() {
+            audio.play();
+        }
+
+        function mouseleave47() {
+        }
+
+        let best48 = document.getElementById('reservation5');
+        function mouseover48() {
+            audio.play();
+        }
+
+        function mouseleave48() {
+        }
+
+        let best49 = document.getElementById('reservation6');
+        function mouseover49() {
+            audio.play();
+        }
+
+        function mouseleave49() {
+        }
+
+        let best51 = document.getElementById('counseling_ko');
+        function mouseover51() {
+            audio.play();
+        }
+
+        function mouseleave51() {
+        }
+
+        let best52 = document.getElementById('counseling_en');
+        function mouseover52() {
+            audio.play();
+        }
+
+        function mouseleave52() {
+        }
+
+        let best53 = document.getElementById('exhibit');
+        function mouseover53() {
+            best53.setAttribute("src", "images/대관_전시2.jpg");
+            audio.play();
+        }
+
+        function mouseleave53() {
+            best53.setAttribute("src", "images/대관_전시.jpg");
+        }
+
+        let best54 = document.getElementById('antiqueroom');
+        function mouseover54() {
+            best54.setAttribute("src", "images/대관_엔틱룸2.jpg");
+            audio.play();
+        }
+
+        function mouseleave54() {
+            best54.setAttribute("src", "images/대관_엔틱룸.jpg");
+        }
+
+        let best55 = document.getElementById('rooms');
+        function mouseover55() {
+            best55.setAttribute("src", "images/대관_전체2.jpg");
+            audio.play();
+        }
+
+        function mouseleave55() {
+            best55.setAttribute("src", "images/대관_전체.jpg");
+        }
+    </script>
+    </script>
+</body>
+
+</html>
