@@ -5,7 +5,7 @@ import pandas as pd
 logo = Image.open('images/logo.jpg')
 st.image(logo)
 st.subheader('테이크 아웃 메뉴(TAKE-OUT MENU)')
-menu = pd.read_excel('F:/CAFE/WEB/menu/menu.xlsx')
+menu = pd.read_excel('menu/menu.xlsx')
 
 select_category = st.selectbox(
     '메뉴종류 선택:',
