@@ -1,8 +1,6 @@
 import streamlit as st
 from PIL import Image
-import numpy as np
 import pandas as pd 
-import matplotlib.pyplot as plt
 
 logo = Image.open('images/logo.jpg')
 st.image(logo)
