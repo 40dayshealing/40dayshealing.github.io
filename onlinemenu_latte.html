@@ -60,48 +60,37 @@
 
     <ul>
         <li><a class="active" href="onlinemenu.html">HOME</a></li>
-        <li><a href="onlinemenu_coffee.html">커피<span class="glyphicon glyphicon-coffee"></span></a></li>
+        <li><a href="onlinemenu_coffee.html">커피</a></li>
         <li><a href="onlinemenu_tea.html">차</a></li>
         <li><a href="onlinemenu_latte.html">라떼</a></li>
         <li><a href="onlinemenu_ade.html">에이드/소다</a></li>
         <li><a href="onlinemenu_dessert.html">디저트</a></li>
     </ul>
     <br>
-    <div class="container">
-        <div class="jumbotron">
-            <p>누르면 커피가 나오는 벨 <span class="glyphicon glyphicon-bell"></span>입니다. <br>
-                벨을 누르신 후 메뉴명과 갯수를 얘기해 주세요~~^^</p>
-        </div>
+    <h4 id="latte">테이크아웃 라떼 (TAKE-OUT LATTE)</h4>
+    <!-- table -->
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>핫 (HOT)</th>
+                    <th>아이스 (ICED)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>칡라떼</th>
+                    <td>
+                        5,000원
+                    </td>
+                    <td>
+                        5,500원
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-
-    <script>
-        var txt = '누르면 커피가 나오는 벨 입니다. 벨을 누르신 후 메뉴명과 갯수를 얘기해 주세요'
-        var msg = new SpeechSynthesisUtterance();
-        var voices = window.speechSynthesis.getVoices();
-        msg.voice = voices[10];
-        msg.volume = 2; // From 0 to 1
-        msg.rate = 1; // From 0.1 to 10
-        msg.pitch = 2; // From 0 to 2
-        msg.text = txt;
-        msg.lang = 'ko-KR';
-        speechSynthesis.speak(msg);
-
-        var typingBool = false;
-        var i = 0;
-        var speed = 50; /* The speed/duration of the effect in milliseconds */
-
-        typingTxt = txt.split("");
-
-        if (i < txt.length) {
-            $("#text").append(typingTxt[i]);
-            // 한글자씩 이어준다. 
-            i++;
-        } else {
-            //끝나면 반복종료 
-            clearInterval(i);
-        }
-    </script>
-
 </body>
 
 </html>
