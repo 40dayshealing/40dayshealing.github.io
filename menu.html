@@ -211,19 +211,36 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
                             <div class="col-md-4">
                                 <div class="thumbnail">
-                                    <div onclick="mouseover8()" onmouseleave="mouseleave8()">
-                                        <img src="images/커피_돌체라떼_핫.jpg" alt="Lights" style="width:100%" id="coffee8">
+                                    <div onmouseover="mouseover_coffee10()" onmouseleave="mouseleave_coffee10()">
+                                        <img src="images/커피_힐링크림라떼_아이스.jpg" alt="Lights" style="width:100%"
+                                            id="coffee10">
                                     </div>
                                     <div class="caption">
-                                        돌체라떼
-                                        <p>HOT 5,000원 /<br>ICE 5,500원</p>
+                                        힐링 크림라떼
+                                        <p>달콤한 연유라떼와 커피의 조화<br>
+                                            ICE 6,000원</p>
                                     </div>
                                 </div>
                             </div>
-                            -->
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <div onmouseover="mouseover_coffee11()" onmouseleave="mouseleave_coffee11()">
+                                        <img src="images/커피_아몬드크림라떼_아이스.jpg" alt="Lights" style="width:100%"
+                                            id="coffee11">
+                                    </div>
+                                    <div class="caption">
+                                        아몬드 크림라떼
+                                        <p>고소한 아몬드크림과 커피의 조화<br>
+                                            ICE 6,000원</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -537,7 +554,8 @@
                                         <img src="images/라떼_팥_아이스.jpg" alt="Lights" style="width:100%" id="latte6">
                                     </div>
                                     <div class="caption">
-                                        팥라떼<p>HOT 5,000원 /<br>ICE 5,500원</p>
+                                        팥라떼
+                                        <p>HOT 5,000원 /<br>ICE 5,500원</p>
                                     </div>
                                 </div>
                             </div>
@@ -1379,6 +1397,21 @@
         function mouseleave_coffee9() {
         }
 
+        let best1_10 = document.getElementById('coffee10');
+        function mouseover_coffee10() { //흑임자 라떼
+            audio.play();
+        }
+
+        function mouseleave_coffee10() {
+        }
+
+        let best1_11 = document.getElementById('coffee11');
+        function mouseover_coffee11() { //흑임자 라떼
+            audio.play();
+        }
+
+        function mouseleave_coffee11() {
+        }
 
 
         let best2_1 = document.getElementById('tea1');
